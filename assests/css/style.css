@@ -504,12 +504,21 @@ footer{
     #mobile-menu{
         display: block;
     }
+    .bottom-clouds-mockup{
+      bottom:-15px;
+    }
+    .scooter img{
+      margin-bottom: 20px;
+    }
 
 }
 @media(max-width:600px){
     .description-content>.container .details{
         width: 80%;
         margin: auto;
+    }
+    .content{
+      width: 100% !important;
     }
 }
 /* Responsive design */
