@@ -7,5 +7,4 @@ $(document).ready(function () {
     $(".cancel-button").click(function (){
         $('#side-menu').hide();
     });
-    
 });

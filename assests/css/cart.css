@@ -25,12 +25,16 @@ a {
 .prod-details .nav-top a.active {
     color: rgb(220, 53, 69);
 }
-
+.prod-details img{
+    width: 150px;
+    height: 130px;
+}
 .prod-container,
 .feedback-container {
     width: 60% !important;
     margin: 0 auto;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+    
 }
 
 .summary {
@@ -149,7 +153,6 @@ a {
 /* Cart details ends */
 /* Responsive design */
 @media(max-width:1200px) {
-
     .prod-container,
     .summary {
         width: 100% !important;
