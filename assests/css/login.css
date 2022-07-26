@@ -47,16 +47,10 @@
     background: #FFF;
 }
 .form.signup{
-    opacity: 0;
-    pointer-events: none;
+    display: none;
 }
-.forms.show-signup .form.signup{
-    opacity: 1;
-    pointer-events: auto;
-}
-.forms.show-signup .form.login{
-    opacity: 0;
-    pointer-events: none;
+.form.forgot-pass {
+    display: none;
 }
 header{
     font-size: 28px;

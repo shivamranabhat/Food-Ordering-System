@@ -29,14 +29,13 @@ a {
     width: 150px;
     height: 130px;
 }
-.prod-container,
-.feedback-container {
+.prod-container
+{
     width: 60% !important;
     margin: 0 auto;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
     
 }
-
 .summary {
     width: 35% !important;
 }
@@ -91,7 +90,9 @@ a {
     position: relative;
     width: 100%;
 }
-
+.breadcrumb .block .fixed-bg{
+    z-index: 0;
+}
 .fixed-bg {
     height: 100%;
     width: 100%;

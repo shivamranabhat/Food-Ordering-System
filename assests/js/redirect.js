@@ -3,7 +3,7 @@ $(document).ready(function (){
         $(".preloader").show();
         window.location.href = "index.html";
       });
-      $(".menu").click(function (){
+      $(".menus").click(function (){
         $(".preloader").show();
         window.location.href = "menu.html";
       });
