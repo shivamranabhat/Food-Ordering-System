@@ -20,3 +20,11 @@ $(document).ready(function(){
         $("#log-form").hide();
     });
 });
+
+//for viewing profile
+$(document).ready(function(){
+    $(".view-profile").on("click",function () {
+        $(".profile").toggle(400);
+    });
+   
+});

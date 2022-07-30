@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Custom css link -->
     <link rel="stylesheet" href="assests/css/style.css">
-    <link rel="stylesheet" href="assests/css/login.css">
     <link rel="stylesheet" href="assests/css/cart.css">
     <link rel="stylesheet" href="assests/css/userdashboard.css">
     <!-- Fontawosome cdn link -->
@@ -23,129 +22,6 @@
 </head>
 
 <body>
-    <!-- section login and signup -->
-    <section id="log-form">
-        <div class="container forms">
-            <div class="form login">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="form-content">
-                    <header>Login</header>
-                    <form action="#">
-                        <div class="field input-field">
-                            <input type="email" placeholder="Email" class="input">
-                        </div>
-
-                        <div class="field input-field">
-                            <input type="password" placeholder="Password" class="password">
-                            <i class='bx bx-hide eye-icon'></i>
-                        </div>
-
-                        <div class="form-link">
-                            <a href="#" class="forgot-link">Forgot password?</a>
-                        </div>
-
-                        <div class="field button-field">
-                            <button>Login</button>
-                        </div>
-                    </form>
-
-                    <div class="form-link">
-                        <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
-                    </div>
-                </div>
-
-                <div class="line"></div>
-
-                <div class="media-options d-flex justify-content-center">
-                    <a href="#" target="_blank" class="mr-3">
-                        <i class="fa-brands fa-facebook-square"></i>
-                    </a>
-                    <a href="#" target="_blank" class="mr-3">
-                        <i class="fa-brands fa-twitter-square"></i>
-                    </a>
-                    <a href="#" target="_blank" class="mr-3">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-
-            </div>
-            <!-- Signup Form -->
-            <div class="form signup">
-                <div class="form-content">
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <header>Signup</header>
-                    <form action="#">
-                        <div class="field input-field">
-                            <input type="email" placeholder="Email" class="input">
-                        </div>
-
-                        <div class="field input-field">
-                            <input type="password" placeholder="Create password" class="password">
-                        </div>
-                        <div class="field button-field">
-                            <button>Signup</button>
-                        </div>
-                    </form>
-                    <div class="form-link log">
-                        <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
-                    </div>
-                </div>
-
-                <div class="line"></div>
-                <div class="media-options d-flex justify-content-center">
-                    <a href="#" target="_blank" class="mr-3">
-                        <i class="fa-brands fa-facebook-square"></i>
-                    </a>
-                    <a href="#" target="_blank" class="mr-3">
-                        <i class="fa-brands fa-twitter-square"></i>
-                    </a>
-                    <a href="#" target="_blank" class="mr-3">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-            <!-- Forgot Password Form -->
-            <div class="form forgot-pass">
-                <div class="form-content">
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <header>Forgot Password</header>
-                    <form action="#">
-                        <div class="field input-field">
-                            <input type="email" placeholder="Email" class="input">
-                        </div>
-                        <div class="field input-field">
-                            <input type="password" placeholder="Create password" class="password">
-                        </div>
-                        <div class="field button-field">
-                            <button>Reset</button>
-                        </div>
-                    </form>
-                    <div class="form-link log">
-                        <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
-                    </div>
-                </div>
-                <div class="line"></div>
-                <div class="media-options d-flex justify-content-center">
-                    <a href="#" target="_blank" class="mr-3">
-                        <i class="fa-brands fa-facebook-square"></i>
-                    </a>
-                    <a href="#" target="_blank" class="mr-3">
-                        <i class="fa-brands fa-twitter-square"></i>
-                    </a>
-                    <a href="#" target="_blank" class="mr-3">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- section login and signup -->
     <!-- section header-->
     <section id="header">
         <div class="header d-flex justify-content-around text-white w-100">
@@ -159,8 +35,31 @@
                     <i class="fa-brands fa-twitter mr-4"></i>
                     <i class="fa-brands fa-google-plus-g mr-5"></i>
                 </div>
-                <div class="sign sign-icons">
-                    <a href="#" class="text-uppercase text-white signin">Login</a>
+                <div class="view-profile position-relative">
+                    <a href="#" class="dashboard"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                      </svg>
+                    </a>
+                </div>
+                <div class="profile p-3 mx-auto bg-light position-absolute rounded">
+                    <div class="container position-relative">
+                        <div class="top-container text-center pt-3">
+                            <div class="user-img d-flex justify-content-center">
+                                <img src="assests/images/user-avatar.jpg" alt="user-profile" class="img-responsive rounded-circle">
+                            </div>
+                            <h5 class=" text-dark mt-3">User Name</h5>
+                            <a class="text-success cursor" href="userdashboard.html">Edit profile</a>
+                        </div>
+                    </div>
+                    <div class="arrow-up position-absolute"></div>
+                    <hr>
+                    <div class="logout text-center">
+                        <a class="text-dark cursor" href="#">Logout</a>
+                    </div>
+                </div>
+                <div class="user-cart position-absolute">
+                    <a href="#"> <i class="fa-solid fa-cart-shopping" style="font-size: 20px;"></i></a>
                 </div>
             </div>
         </div>
@@ -179,7 +78,7 @@
                 </div>
                 <div class="link px-4 py-2 mr-5">
                     <p class="text-uppercase mb-0">Fast Foods</p>
-                    <h6 class="font-weight-bold"><a href="#menu" class="text-uppercase menu text-dark menu">Menu</a>
+                    <h6 class="font-weight-bold"><a href="#" class="text-uppercase text-dark menus">Menu</a>
                     </h6>
                 </div>
                 <div class="link px-4 py-2 mr-5">
@@ -200,7 +99,7 @@
     <section id="mobile-menu">
         <div class="ham-header d-flex justify-content-between px-3 py-2">
             <div class="logo">
-                <img src="assests/images/logo-2.png" alt="logo">
+                <img src="assests/images/logo 2.png" alt="logo">
             </div>
             <button class="toggle-btn btn">
                 <i class="fa-solid fa-bars-staggered mt-2"></i>
@@ -215,12 +114,12 @@
                 </svg>
             </div>
             <div class="menu-list">
-                <div class="profile mt-3">
+                <div class="user-profile mt-3">
                     <div class="user-image d-flex justify-content-center">
                         <img src="assests/images/user-avatar.jpg" alt="user-avatar" class="rounded-circle">
                     </div>
                     <div class="user-name d-flex justify-content-center mt-2">
-                        <p class="text-white">Shivam Ranabhat</p>
+                        <p class="text-white">User Name</p>
                     </div>
                     <div class="edit-profile d-flex justify-content-center">
                         <button class="btn btn-outline-light"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
@@ -257,9 +156,7 @@
                     <i class="fa-brands fa-twitter mr-4"></i>
                     <i class="fa-brands fa-google-plus-g mr-5"></i>
                 </div>
-                <div class="sign sign-buttons mt-4">
-                    <a href="#" class="btn text-uppercase text-white signin">Login</a>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -275,8 +172,8 @@
                 <h1 class="font-weight-bold text-uppercase text-white">Dashboard</h1>
             </div>
             <div class="container">
-                <div class="bread-crumbs-wrapper mt-3 px-5">
-                    <ol class="breadcrumb ml-2">
+                <div class="bread-crumbs-wrapper mt-3">
+                    <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#" class="text-muted" itemprop="url">Home</a></li>
                         <li class="breadcrumb-item active">Dashboard</li>
                     </ol>
@@ -287,7 +184,7 @@
     <!-- section breadcrumb -->
     <!-- section dashboard -->
     <section id="user-dashboard">
-        <div class="dashboard p-4 ">
+        <div class="dashboard p-4">
             <div class="container">
                 <div class="left-board mr-4 rounded">
                     <div class="top-board">
@@ -304,42 +201,45 @@
                         <div class="bottom-content">
                             <ul class="nav nav-tabs navbar-nav ml-4 ">
                                 <li class="nav-item text-uppercase active py-3">
-                                    <a class="active show" href="#home-dashboard" data-toggle="tab"
-                                        data-target="#home-dashboard"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                            height="16" fill="currentColor" class="bi bi-grid-fill mb-1"
-                                            viewBox="0 0 16 16">
-                                            <path
-                                                d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z" />
-                                        </svg>
-                                        Dashboard
+                                    <a class="active show px-3 py-1" href="#home-dashboard" data-toggle="tab"
+                                        data-target="#home-dashboard"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                          </svg>
+                                        Profile
                                     </a>
                                 </li>
                                 <li class="text-uppercase py-3">
-                                    <a href="#orders" data-toggle="tab"><svg xmlns="http://www.w3.org/2000/svg"
-                                            width="16" height="16" fill="currentColor" class="bi bi-basket-fill mb-2"
+                                    <a href="#orders" class="px-3 py-1" data-toggle="tab"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="20" height="20" fill="currentColor" class="bi bi-basket-fill mb-2"
                                             viewBox="0 0 16 16">
                                             <path
                                                 d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717L5.07 1.243zM3.5 10.5a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3z" />
                                         </svg> Orders</a>
                                 </li>
                                 <li class="text-uppercase py-3">
-                                    <a href="#reviews" data-toggle="tab"><svg xmlns="http://www.w3.org/2000/svg"
-                                            width="16" height="16" fill="currentColor" class="bi bi-chat-fill mb-1"
+                                    <a href="#whishlist" class="px-3 py-1" data-toggle="tab"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                      </svg> Favorites
+                                    </a>
+                                </li>
+                                <li class="text-uppercase py-3">
+                                    <a href="#reviews" class="px-3 py-1" data-toggle="tab"><svg xmlns="http://www.w3.org/2000/svg"
+                                            width="20" height="20" fill="currentColor" class="bi bi-chat-fill mb-1"
                                             viewBox="0 0 16 16">
                                             <path
                                                 d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z" />
-                                        </svg> My Reviews</a>
-                                </li>
-                                <li class="text-uppercase py-3">
-                                    <a href="#settings" data-toggle="tab"><svg xmlns="http://www.w3.org/2000/svg"
-                                            width="16" height="16" fill="currentColor" class="bi bi-gear-fill mb-1"
-                                            viewBox="0 0 16 16">
-                                            <path
-                                                d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
-                                        </svg>
-                                        Settings
+                                        </svg> My Reviews
                                     </a>
                                 </li>
+                               <div class="logout">
+                                <li class="text-uppercase py-3">
+                                    <a href="#reviews" class="px-3 py-1" data-toggle="tab"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
+                                        <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
+                                      </svg> Logout
+                                    </a>
+                                </li>
+                               </div>
                             </ul>
                         </div>
                     </div>
@@ -348,11 +248,42 @@
                     <div class="tab-content">
                         <div class="tab-pane fade in active show" id="home-dashboard">
                             <div id="dashboard-content">
-                                <div class="description-content text-center my-2">
-                                    <h3>Recommend Food</h3>
-                                    <h2 class="font-weight-bold text-uppercase">In offer price</h2>
+                                <div class="description-content my-2">
+                                    <h2 class="font-weight-bold text-uppercase text-center">Profile</h2>
                                 </div>
-                                <div class="container mt-2 catagory">
+                                <div class="container my-2">
+                                    <div class="user-image d-flex justify-content-center">
+                                        <img src="assests/images/user-png.png" alt="profile" width="200" class="d-block">   
+                                    </div>
+                                    <div class="file-upload d-flex justify-content-center">
+                                        <input type="file" name="image" id="image">
+                                    </div>
+                                    <div class="user-form px-3 pb-3 mt-3">
+                                        <form action="#">
+                                            <div class="row">
+                                              <div class="col-12 col-sm-12 col-lg-6 col-md-6 mb-2">
+                                                <label for="firstname">First Name</label>
+                                                <input type="text" class="form-control" placeholder="First name">
+                                              </div>
+                                              <div class="col-12 col-sm-12 col-lg-6 col-md-6 mb-2">
+                                                <label for="lastname">Last Name</label>
+                                                <input type="text" class="form-control" placeholder="Last name">
+                                              </div>
+                                              <div class="col-12 col-sm-12 col-lg-6 col-md-6 mb-2">
+                                                <label for="phone">Phone</label>
+                                                <input type="tel" class="form-control" placeholder="Phone">
+                                              </div>
+                                              <div class="col-12 col-sm-12 col-lg-6 col-md-6 mb-2">
+                                                <label for="email">Email</label>
+                                                <input type="email" class="form-control" placeholder="Email">
+                                              </div>
+                                            </div>
+                                            <input type="submit" value="Update" class="btn btn-primary mt-3">
+                                            <input type="submit" value="Cancel" class="btn btn-secondary mt-3 ml-3">
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- <div class="container mt-2 catagory">
                                     <div class="d-flex justify-content-center row">
                                         <div class="col-md-10">
                                             <div class="row p-2 bg-white border rounded mb-2">
@@ -536,13 +467,13 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <div class="tab-pane fade in px-2" id="orders">
                             <div class="description-content text-center mt-2 mb-3">
                                 <h3>Lists of</h3>
-                                <h2 class="font-weight-bold text-uppercase">Your Bookings</h2>
+                                <h2 class="font-weight-bold text-uppercase">Order History</h2>
                             </div>
                             <div class="table-responsive">
                                 <table class="table">
@@ -551,6 +482,7 @@
                                             <th scope="col">Item Name</th>
                                             <th scope="col">Item Image</th>
                                             <th scope="col">Date</th>
+                                            <th scope="col">Total</th>
                                             <th scope="col">Status</th>
                                         </tr>
                                     </thead>
@@ -563,6 +495,7 @@
                                                     class="img-fluid rounded-circle ml-2" width="100px" alt="cart-item">
                                             </td>
                                             <td> Dec 31, 2022</td>
+                                            <td> Rs.190</td>
                                             <td><button class="btn btn-info btn-sm">Processing</button></td>
                                         </tr>
                                         <tr>
@@ -573,6 +506,7 @@
                                                     class="img-fluid rounded-circle ml-2" width="100px" alt="cart-item">
                                             </td>
                                             <td>Feb 1, 2022</td>
+                                            <td>Rs.200</td>
                                             <td><button class="btn btn-success btn-sm">Completed</button></td>
                                         </tr>
                                         <tr>
@@ -583,6 +517,7 @@
                                                     class="img-fluid rounded-circle ml-2" width="100px" alt="cart-item">
                                             </td>
                                             <td>Feb 09, 2022</td>
+                                            <td>Rs.150</td>
                                             <td><button class="btn btn-success btn-sm">Completed</button></td>
                                         </tr>
                                     </tbody>
@@ -700,59 +635,76 @@
     </section>
     <!-- section dashboard -->
     <!-- section footer -->
-    <footer id="footer" class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 d-flex">
-                    <i class="bi bi-geo-alt icon"></i>
-                    <div>
-                        <h4>Address</h4>
-                        <p>
+    <div class="footer-section mt-5">
+        <footer id="footer" class="footer position-relative">
+            <span class="menu-shapes-left">
+                <img src="assests/images/footer-left.png" alt="scatter">
+            </span>
+            <span class="menu-shapes-right animate">
+                <img src="assests/images/footer-right.png" alt="scatter">
+            </span>
+            <span class="menu-shapes-bottom">
+                <img src="assests/images/footer-bottom.png" alt="scatter">
+            </span>
+            <span class="menu-shapes-left-bottom animate">
+                <img src="assests/images/footer-left-bottom.png" alt="scatter">
+            </span>
+            <span class="menu-shapes-right-bottom animate">
+                <img src="assests/images/footer-right-bottom.png" alt="scatter">
+            </span>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 d-flex">
+                        <i class="bi bi-geo-alt icon"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>
                             Pokhara-27, Gandaki<br>
                             Pradesh-4, Nepal<br>
-                        </p>
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 footer-links d-flex">
-                    <i class="bi bi-telephone icon"></i>
-                    <div>
-                        <h4>Reservations</h4>
-                        <p>
+                    <div class="col-lg-3 col-md-6 footer-links d-flex">
+                        <i class="bi bi-telephone icon"></i>
+                        <div>
+                            <h4>Reservations</h4>
+                            <p>
                             <strong>Phone:</strong> +977 98058 67639<br>
                             <strong>Email:</strong> info@example.com<br>
-                        </p>
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 footer-links d-flex">
-                    <i class="bi bi-clock icon"></i>
-                    <div>
-                        <h4>Opening Hours</h4>
-                        <p>
+                    <div class="col-lg-3 col-md-6 footer-links d-flex">
+                        <i class="bi bi-clock icon"></i>
+                        <div>
+                            <h4>Opening Hours</h4>
+                            <p>
                             <strong>Mon-Sat: 11AM</strong> - 10PM<br>
                             Sunday: Closed
-                        </p>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Follow Us</h4>
+                        <div class="footer-social-links d-flex">
+                            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 footer-links">
-                    <h4>Follow Us</h4>
-                    <div class="footer-social-links d-flex">
-                        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-                    </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>Food Pokhara</span></strong>. All Rights Reserved
+                </div>
+                <div class="greeting">
+                    <h6>Thanks for visiting</h6>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="copyright">
-                &copy; Copyright <strong><span>Food Chow</span></strong>. All Rights Reserved
-            </div>
-            <div class="greeting">
-                <h6>Thanks for visiting</h6>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
     <!-- section footer -->
     <!-- Optional JavaScript -->
     <script src="./assests/jquery/jquery3.6.js"></script>

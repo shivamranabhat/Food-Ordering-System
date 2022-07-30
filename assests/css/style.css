@@ -16,7 +16,30 @@ body {
 a {
   text-decoration: none !important;
 }
+.box-shadow{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 2px, rgba(0, 0, 0, 0.23) 0px 0px 2px;
+}
+.box-shadow-2{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.animate{
+  animation: bounce 3s infinite ease-in-out;
+}
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
 
+  50% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
 /* preloader design */
 /*===== Page Loader =====*/
 .preloader {
@@ -275,11 +298,20 @@ a {
   padding: 15px;
 }
 
-.icons i {
+.icons i,.cart a,.user-cart a  {
   font-size: 20px;
-  color: rgb(187, 187, 187);
+  color: rgb(234, 232, 232);
 }
-
+.cart a:hover,.user-cart a:hover{
+  color:rgb(234, 27, 37)
+}
+.cart{
+  right:5%;
+  top:25%;
+}
+.user-cart{
+  right: 5%;
+}
 .icon-background {
   display: flex;
 }
@@ -300,7 +332,25 @@ a {
   cursor: pointer;
   color: rgb(234, 27, 37) !important;
 }
-
+.view-profile .dashboard{
+  color:rgb(221,222,222);
+}
+.profile{
+  width: 20%;
+  z-index: 1;
+  top:7%;
+  right: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: none;
+}
+.arrow-up {
+  top:-17px;
+  width: 0; 
+  height: 0; 
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid rgb(254, 254, 254);
+}
 /* Header design */
 /* Navigation bar */
 .navigation-bar .link p {
@@ -326,7 +376,7 @@ a {
   background: rgb(29, 29, 29);
 }
 
-.profile img {
+.user-profile img {
   width: 80px;
 }
 
@@ -348,7 +398,9 @@ a {
   color: rgb(247, 147, 30);
   font-size: 0.75em;
 }
-
+.logo img{
+  width: 120px;
+}
 .menu-list ul li a {
   font-size: 1.125em;
   color: #fff;
@@ -461,6 +513,24 @@ a {
 
 /* Body design */
 /* description design */
+.about .description-content p{
+  font-size: 18px;
+  letter-spacing: 1;
+  line-height: 30px;
+}
+.about .description-content p{
+  font-size: 18px;
+  letter-spacing: 1;
+  line-height: 30px;
+}
+.about .description-content h1::after{
+  content: '';
+  display: block;
+  width: 10%;
+  border-radius: 5px;
+  height: 4px;
+  background: rgb(230, 136, 28);
+}
 .description-content h3,
 .gallery h3 {
   color: rgb(234, 27, 37);
@@ -481,7 +551,16 @@ a {
 .food-items .row .whishlist{
   right:10px;
   top:10px;
-  color: rgb(255, 189, 53);
+}
+.food-items .row .whishlist, .cart-button i{
+  color:rgb(119, 119, 119);
+}
+.food-items .row .whishlist svg:hover, .carts-option i:hover,.cart-button i:hover{
+  color:rgb(212,44,43);
+}
+.carts-option i,.cart-button i{
+  font-size: 24px;
+  cursor: pointer;
 }
 .food-items .row .whishlist:hover{
   color: rgb(0, 0, 0);
@@ -519,26 +598,7 @@ a {
   position: absolute;
   right: 1%;
   bottom: 38%;
-  animation: bounce 3s infinite ease-in-out;
 }
-
-@keyframes bounce {
-  0% {
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
-  }
-
-  50% {
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px);
-  }
-
-  100% {
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
-  }
-}
-
 .menu-shapes-right {
   position: absolute;
   right: 0;
@@ -597,13 +657,17 @@ a {
   color: #8d8d9b;
   margin-bottom: 5px;
 }
-
+.menu-section .tab-content .whishlist{
+  position: absolute;
+  right:20px;
+  top:10px
+}
 .menu-section .tab-content .menu-item .price {
   font-size: 24px;
   font-weight: 700;
   color: #ce1212;
 }
-.menu-section .tab-content .menu-item .price a:hover{
+.menu-section .tab-content .menu-item .price a:hover,.menu-section .tab-content .whishlist:hover{
   color: #ce1212;
 }
 .prod-image img {
@@ -616,13 +680,35 @@ a {
   color: #fff;
   background: #FFBD35;
 }
-
 .del-time img {
   width: 30px;
   height: 30px;
 }
 
 /* food catagory design */
+/* delivery info */
+.delivery-info .menu-shapes-right{
+  right: 5%;
+}
+.delivery-info .row .left-content .start-text{
+  color: rgb(234, 27, 37);
+  font-family: great vibes;
+}
+.delivery-info .row .left-content h1{
+  font-weight: bolder;
+}
+.delivery-info .row .left-content h5{
+  letter-spacing: 2;
+}
+.delivery-info .row .left-content .bottom-left h5{
+  color: rgb(234, 27, 37);
+  font-weight: bolder;
+}
+.delivery-info .row .left-content .icon-image img{
+  width: 60px;
+  transform: scaleX(-1);
+}
+/* delivery info */
 /* contact design */
 .contact-container,.feedback {
   width: 60%;
@@ -731,15 +817,46 @@ a {
   padding-bottom: 20px;
   display: inline-block;
 }
+#testimonial .menu-shapes-right{
+  right: 2%;
+}
 /* section testimonials design */
 /* footer design */
+.footer-section{
+  background:rgb(39, 39, 39);
+}
 .footer {
   font-size: 15px;
-  background-color: #1f1f24;
+  background: url(../images/footer-bg.png);
   padding: 50px 0;
   color: rgba(255, 255, 255, 0.7);
 }
-
+.footer .menu-shapes-left{
+  top:0;
+}
+.footer .menu-shapes-right{
+  position: absolute;
+  top:10%;
+  right:5%;
+  opacity: 1;
+  z-index: 1;
+}
+.footer .menu-shapes-bottom{
+  position: absolute;
+  bottom:5%;
+  right:5%;
+  opacity: .5;
+}
+.footer .menu-shapes-left-bottom{
+  position: absolute;
+  bottom:20%;
+  left:5%;
+}
+.footer .menu-shapes-right-bottom{
+  position: absolute;
+  bottom:20%;
+  right:15%;
+}
 .footer .icon {
   margin-right: 15px;
   font-size: 24px;

@@ -148,7 +148,7 @@ a {
 }
 
 .breadcrumb>li.active {
-    color: red;
+    color: rgb(247,147,30);
 }
 
 /* Cart details ends */

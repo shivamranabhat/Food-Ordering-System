@@ -17,7 +17,7 @@ a {
   text-decoration: none !important;
 }
 
-.dashboard .container {
+.dashboard>.container {
   display: flex;
 }
 
@@ -50,7 +50,6 @@ a {
 .left-board .bottom-content a:hover,
 .left-board .bottom-content a.active {
   background: rgb(234, 27, 37);
-  padding: 5px 10px;
   border-radius: 10px;
   color: #fff;
 }

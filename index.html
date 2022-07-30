@@ -22,7 +22,7 @@
 
 <body>
     <!-- preloader -->
-    <div class="preloader">
+    <!-- <div class="preloader">
         <div id="cooking">
             <div class="bubble"></div>
             <div class="bubble"></div>
@@ -39,8 +39,35 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- preloader -->
+    <!-- cart option -->
+    <div id="cart-option">
+        <div class="container-fluid d-flex justify-content-center mt-5">
+            <div class="option-container">
+                <div class="cancel d-flex justify-content-end m-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="rgb(212,44,43)" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                    </svg>
+                </div>
+                <div class="option-contents px-5 py-4">
+                    <div class="cart-option d-flex justify-content-center">
+                        
+                        <h5><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                        </svg> Add to whislist</h5>
+                </div>
+                <hr>
+                <div class="whishlist-option d-flex justify-content-center">
+                        <h5><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                        </svg> Add to cart</h5>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- cart option -->
     <!-- section login and signup -->
     <section id="log-form">
         <div class="container forms">
@@ -138,7 +165,7 @@
                             <input type="email" placeholder="Email" class="input">
                         </div>
                         <div class="field input-field">
-                            <input type="password" placeholder="Create password" class="password">
+                            <input type="password" placeholder="Create new password" class="password">
                         </div>
                         <div class="field button-field">
                             <button>Reset</button>
@@ -166,7 +193,7 @@
     <!-- section login and signup -->
     <!-- section header-->
     <section id="header">
-        <div class="header d-flex justify-content-around text-white w-100">
+        <div class="header d-flex justify-content-around text-white w-100 position-relative">
             <div class="left-header d-flex">
                 <div class="review mr-5 px-5">Review</div>
                 <div class="help px-5">Help?</div>
@@ -181,6 +208,9 @@
                     <a href="#" class="text-uppercase text-white signin">Login</a>
                 </div>
             </div>
+            <div class="cart position-absolute">
+                <a href="#">  <i class="fa-solid fa-cart-shopping" style="font-size: 20px;"></i></a>
+            </div>
         </div>
     </section>
     <!-- section header-->
@@ -193,11 +223,11 @@
             <div class="navigation-bar d-flex">
                 <div class="link px-4 py-2 mr-5">
                     <p class="text-uppercase mb-0">food ordering</p>
-                    <h6 class="font-weight-bold"><a href="#" class="text-uppercase text-dark home">home</a></h6>
+                    <h6 class="font-weight-bold"><a href="#" class="text-uppercase text-dark home active">home</a></h6>
                 </div>
                 <div class="link px-4 py-2 mr-5">
                     <p class="text-uppercase mb-0">Fast Foods</p>
-                    <h6 class="font-weight-bold"><a href="#menu" class="text-uppercase menu text-dark menu">Menu</a>
+                    <h6 class="font-weight-bold"><a href="#" class="text-uppercase menu text-dark menus">Menu</a>
                     </h6>
                 </div>
                 <div class="link px-4 py-2 mr-5">
@@ -210,7 +240,7 @@
                     <h6 class="font-weight-bold cont"><a href="#" class="text-uppercase text-dark contact">Contact</a>
                     </h6>
                 </div>
-            </div>
+            </div> 
         </div>
     </section>
     <!-- section navbar -->
@@ -218,7 +248,7 @@
     <section id="mobile-menu">
         <div class="ham-header d-flex justify-content-between px-3 py-2">
             <div class="logo">
-                <img src="assests/images/logo-2.png" alt="logo">
+                <img src="assests/images/logo 2.png" alt="logo">
             </div>
             <button class="toggle-btn btn">
                 <i class="fa-solid fa-bars-staggered mt-2"></i>
@@ -233,12 +263,12 @@
                 </svg>
             </div>
             <div class="menu-list">
-                <div class="profile mt-3">
+                <div class="user-profile mt-3">
                     <div class="user-image d-flex justify-content-center">
                         <img src="assests/images/user-avatar.jpg" alt="user-avatar" class="rounded-circle">
                     </div>
                     <div class="user-name d-flex justify-content-center mt-2">
-                        <p class="text-white">Shivam Ranabhat</p>
+                        <p class="text-white">User Name</p>
                     </div>
                     <div class="edit-profile d-flex justify-content-center">
                         <button class="btn btn-outline-light"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
@@ -275,9 +305,7 @@
                     <i class="fa-brands fa-twitter mr-4"></i>
                     <i class="fa-brands fa-google-plus-g mr-5"></i>
                 </div>
-                <div class="sign sign-buttons mt-4">
-                    <a href="#" class="btn text-uppercase text-white signin">Login / Register</a>
-                </div>
+               
             </div>
         </div>
     </section>
@@ -380,7 +408,7 @@
             <span class="menu-shapes-right">
                 <img src="assests/images/scatter-5.png" alt="scatter">
             </span>
-            <span class="menu-shapes-middle">
+            <span class="menu-shapes-middle animate">
                 <img src="assests/images/scatter-6.png" alt="scatter">
             </span>
             <div class="container mt-5 mb-5 catagory">
@@ -624,7 +652,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="next mt-4 d-flex justify-content-end">
+                <div class="next mt-4 d-flex justify-content-center">
                     <a href="#" class="btn rounded-pill px-3 next-button">Next <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
                         <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
                       </svg>
@@ -650,12 +678,14 @@
             <div class="container-fluid">
                 <div class="row d-flex justify-content-center mt-5 mx-5" id="row-one">
                     <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="card">
-                            <img class="card-img-top" src="assests/images/food-item-1.jpg" alt="Card image cap"
-                                class="position-relative">
-                                <a href="#" class="whishlist position-absolute"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                                </svg></a>
+                        <div class="card box-shadow-2 text-center">
+                            <div class="food-image d-flex justify-content-center">
+                                <img src="assests/menu/menu-item-1.png" alt="Card image cap"
+                                class="mt-5" width="200">
+                            </div>
+                            <a href="#" class="whishlist position-absolute"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                            </svg></a>
                             <span id="rating"
                                 class="position-absolute text-white px-3 rounded d-flex align-items-center"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -663,7 +693,8 @@
                                     <path
                                         d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
                                 </svg><strong>4.21</strong>
-                            </span>                     
+                            </span>   
+                            <hr>                  
                             <div class="card-body">
                                 <h5 class="card-title font-weight-bold">Thai Foods</h5>
                                 <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing
@@ -671,14 +702,17 @@
                                     adipisci.</p>
                                 <div class="bottom-links d-flex justify-content-between align-items-center">
                                     <h5><strong>Rs.85.00</strong></h5>
-                                    <a href="#" class="btn btn-dark text-white text-uppercase">Order Now</a>
+                                    <a href="#" class="btn cart-button mb-1"><i class="fa-solid fa-cart-shopping"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="card">
-                            <img class="card-img-top" src="assests/images/food-item-2.jpg" alt="Card image cap">
+                        <div class="card box-shadow-2 text-center">
+                            <div class="food-image d-flex justify-content-center">
+                                <img src="assests/menu/menu-item-2.png" alt="Card image cap"
+                                class="mt-5" width="200">
+                            </div>
                             <a href="#" class="whishlist position-absolute"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
                             </svg></a>
@@ -688,7 +722,9 @@
                                     class="bi bi-star mr-1" viewBox="0 0 16 16">
                                     <path
                                         d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
-                                </svg><strong>4.38</strong></span>
+                                </svg><strong>4.21</strong>
+                            </span>   
+                            <hr>                  
                             <div class="card-body">
                                 <h5 class="card-title font-weight-bold">Thai Foods</h5>
                                 <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing
@@ -696,14 +732,17 @@
                                     adipisci.</p>
                                 <div class="bottom-links d-flex justify-content-between align-items-center">
                                     <h5><strong>Rs.85.00</strong></h5>
-                                    <a href="#" class="btn btn-dark text-white text-uppercase">Order Now</a>
+                                    <a href="#" class="btn cart-button mb-1"><i class="fa-solid fa-cart-shopping"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="card">
-                            <img class="card-img-top" src="assests/images/food-img-3.jpg" alt="Card image cap">
+                        <div class="card box-shadow-2 text-center">
+                            <div class="food-image d-flex justify-content-center">
+                                <img src="assests/menu/menu-item-3.png" alt="Card image cap"
+                                class="mt-5" width="200">
+                            </div>
                             <a href="#" class="whishlist position-absolute"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
                             </svg></a>
@@ -713,7 +752,9 @@
                                     class="bi bi-star mr-1" viewBox="0 0 16 16">
                                     <path
                                         d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
-                                </svg><strong>5.00</strong></span>
+                                </svg><strong>4.21</strong>
+                            </span> 
+                            <hr>                    
                             <div class="card-body">
                                 <h5 class="card-title font-weight-bold">Thai Foods</h5>
                                 <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing
@@ -721,37 +762,46 @@
                                     adipisci.</p>
                                 <div class="bottom-links d-flex justify-content-between align-items-center">
                                     <h5><strong>Rs.85.00</strong></h5>
-                                    <a href="#" class="btn btn-dark text-white text-uppercase">Order Now</a>
+                                    <a href="#" class="btn cart-button mb-1"><i class="fa-solid fa-cart-shopping"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3">
-                        <div class="card">
-                            <img class="card-img-top" src="assests/images/food-img-4.jpg" alt="Card image cap"
-                                class="position-relative">
-                                <a href="#" class="whishlist position-absolute"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                                </svg></a>
-                                <span id="rating"
-                                    class="position-absolute text-white px-3 rounded d-flex align-items-center"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-star mr-1" viewBox="0 0 16 16">
-                                        <path
-                                            d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
-                                    </svg><strong>4.21</strong>
-                                </span>
-                                <div class="card-body">
-                                    <h5 class="card-title font-weight-bold">Thai Foods</h5>
-                                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing
-                                        elit. A,
-                                        adipisci.</p>
-                                    <div class="bottom-links d-flex justify-content-between align-items-center">
-                                        <h5><strong>Rs.85.00</strong></h5>
-                                        <a href="#" class="btn btn-dark text-white text-uppercase">Order Now</a>
-                                    </div>
+                        <div class="card box-shadow-2 text-center">
+                            <div class="food-image d-flex justify-content-center">
+                                <img src="assests/menu/menu-item-4.png" alt="Card image cap"
+                                class="mt-5" width="200">
+                            </div>
+                            <a href="#" class="whishlist position-absolute"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                            </svg></a>
+                            <span id="rating"
+                                class="position-absolute text-white px-3 rounded d-flex align-items-center"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-star mr-1" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                                </svg><strong>4.21</strong>
+                            </span>    
+                            <hr>                 
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold">Thai Foods</h5>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                    elit. A,
+                                    adipisci.</p>
+                                <div class="bottom-links d-flex justify-content-between align-items-center">
+                                    <h5><strong>Rs.85.00</strong></h5>
+                                    <a href="#" class="btn cart-button mb-1"><i class="fa-solid fa-cart-shopping"></i></a>
                                 </div>
+                            </div>
                         </div>
+                    </div>
+                    <div class="next mt-4 d-flex">
+                        <a href="#" class="btn rounded-pill px-3 next-button">Next <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                          </svg>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -760,17 +810,11 @@
     <!-- section featured food items -->
     <!-- section menu -->
     <section id="menu">
-        <div class="menu-section py-5 position-relative">
+        <div class="menu-section py-5">
             <div class="description-content text-center">
                 <h3>Choose your food </h3>
                 <h1 class="font-weight-bold text-uppercase">Your Favorite Food</h1>
             </div>
-            <span class="menu-shapes-left">
-                <img src="assests/images/scatter-2.png" alt="scatter">
-            </span>
-            <span class="menu-shapes-right">
-                <img src="assests/images/scatter-3.png" alt="scatter">
-            </span>
             <div class="container menu-content mt-5">
                 <ul class="nav nav-tabs d-flex justify-content-center mb-5">
                     <li class="nav-item">
@@ -801,261 +845,169 @@
                 <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
                     <div class="tab-pane fade active show" id="menu-starters">
                         <div class="row gy-5">
-                            <div class="col-lg-4 menu-item">
+                            <div class="col-lg-4 menu-item box-shadow">     
                                 <a href="assests/menu/menu-item-1.png" class="glightbox"><img
-                                        src="assests/menu/menu-item-1.png" class="menu-img img-fluid" alt="menu-item-1"></a>
+                                        src="assests/menu/menu-item-1.png" class="menu-img img-fluid mt-2" alt="menu-item-1"></a>
                                 <h4>Food Item</h4>
                                 <p class="ingredients">
                                     Lorem, deren, trataro, filede, nerada
                                 </p>
-                                <div class="price d-flex justify-content-around">
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                                        </svg>
-                                    </a>
-                                    <p class="price">
+                                <div class="price d-flex justify-content-between px-3">
+                                    <p class="price ml-3">
                                         Rs.195
                                     </p>
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                        </svg>
-                                    </a>
+                                    <p class="btn carts-option mb-1"><i class="fa-solid fa-circle-plus"></i></p>
                                 </div>
                             </div>
-                            <div class="col-lg-4 menu-item">
+                            <div class="col-lg-4 menu-item box-shadow">
                                 <a href="assests/menu/menu-item-2.png" class="glightbox"><img
                                         src="assests/menu/menu-item-2.png" class="menu-img img-fluid" alt="menu-item-2"></a>
                                 <h4>Food Item</h4>
                                 <p class="ingredients">
                                     Lorem, deren, trataro, filede, nerada
                                 </p>
-                                <div class="price d-flex justify-content-around">
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                                          </svg>
-                                    </a>
-                                    <p class="price">
+                                <div class="price d-flex justify-content-between px-3">
+                                    <p class="price ml-3">
                                         Rs.195
                                     </p>
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                        </svg>
-                                    </a>
+                                    <p class="btn carts-option mb-1"><i class="fa-solid fa-circle-plus"></i></p>
                                 </div>
                             </div>
-                            <div class="col-lg-4 menu-item">
+                            <div class="col-lg-4 menu-item box-shadow">
                                 <a href="assests/menu/menu-item-3.png" class="glightbox"><img
-                                        src="assests/menu/menu-item-3.png" class="menu-img img-fluid" alt="menu-item-3"></a>
+                                        src="assests/menu/menu-item-3.png" class="menu-img img-fluid mt-2" alt="menu-item-3"></a>
                                 <h4>Food Item</h4>
                                 <p class="ingredients">
                                     Lorem, deren, trataro, filede, nerada
                                 </p>
-                                <div class="price d-flex justify-content-around">
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                                          </svg>
-                                    </a>
-                                    <p class="price">
+                                <div class="price d-flex justify-content-between px-3">
+                                    <p class="price ml-3">
                                         Rs.195
                                     </p>
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                        </svg>
-                                    </a>
+                                    <p class="btn carts-option mb-1"><i class="fa-solid fa-circle-plus"></i></p>
                                 </div>
                             </div>
-                            <div class="col-lg-4 menu-item">
+                            <div class="col-lg-4 menu-item box-shadow">   
                                 <a href="assests/menu/menu-item-4.png" class="glightbox"><img
-                                        src="assests/menu/menu-item-4.png" class="menu-img img-fluid" alt="menu-item-4"></a>
+                                        src="assests/menu/menu-item-4.png" class="menu-img img-fluid mt-2" alt="menu-item-4"></a>
                                 <h4>Food Item</h4>
                                 <p class="ingredients">
                                     Lorem, deren, trataro, filede, nerada
                                 </p>
-                                <div class="price d-flex justify-content-around">
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                                          </svg>
-                                    </a>
-                                    <p class="price">
+                                <div class="price d-flex justify-content-between px-3">
+                                    <p class="price ml-3">
                                         Rs.195
                                     </p>
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                        </svg>
-                                    </a>
+                                    <p class="btn carts-option mb-1"><i class="fa-solid fa-circle-plus"></i></p>
                                 </div>
                             </div>
-                            <div class="col-lg-4 menu-item">
+                            <div class="col-lg-4 menu-item box-shadow">
+                                
                                 <a href="assests/menu/menu-item-5.png" class="glightbox"><img
-                                        src="assests/menu/menu-item-5.png" class="menu-img img-fluid" alt="menu-item-5"></a>
+                                        src="assests/menu/menu-item-5.png" class="menu-img img-fluid mt-2" alt="menu-item-5"></a>
                                 <h4>Food Item</h4>
                                 <p class="ingredients">
                                     Lorem, deren, trataro, filede, nerada
                                 </p>
-                                <div class="price d-flex justify-content-around">
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                                          </svg>
-                                    </a>
-                                    <p class="price">
+                                <div class="price d-flex justify-content-between px-3">
+                                    <p class="price ml-3">
                                         Rs.195
                                     </p>
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                        </svg>
-                                    </a>
+                                    <p class="btn carts-option mb-1"><i class="fa-solid fa-circle-plus"></i></p>
                                 </div>
                             </div>
-                            <div class="col-lg-4 menu-item">
+                            <div class="col-lg-4 menu-item box-shadow">
+                                
                                 <a href="assests/menu/menu-item-6.png" class="glightbox"><img
                                         src="assests/menu/menu-item-6.png" class="menu-img img-fluid" alt="menu-item-6"></a>
                                 <h4>Food Item</h4>
                                 <p class="ingredients">
                                     Lorem, deren, trataro, filede, nerada
                                 </p>
-                                <div class="price d-flex justify-content-around">
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                                          </svg>
-                                    </a>
-                                    <p class="price">
+                                <div class="price d-flex justify-content-between px-3">
+                                    <p class="price ml-3">
                                         Rs.195
                                     </p>
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                        </svg>
-                                    </a>
+                                    <p class="btn carts-option mb-1"><i class="fa-solid fa-circle-plus"></i></p>
                                 </div>
                             </div>
                         </div>
                     </div><!-- End Starter Menu Content -->
                     <div class="tab-pane fade" id="menu-breakfast">
                         <div class="row gy-5">
-                            <div class="col-lg-4 menu-item">
+                            <div class="col-lg-4 menu-item box-shadow">
+                                
                                 <a href="assests/menu/menu-item-1.png" class="glightbox"><img
-                                        src="assests/menu/menu-item-1.png" class="menu-img img-fluid" alt="menu-item-1"></a>
+                                        src="assests/menu/menu-item-1.png" class="menu-img img-fluid mt-2" alt="menu-item-1"></a>
                                 <h4>Food Item</h4>
                                 <p class="ingredients">
                                     Lorem, deren, trataro, filede, nerada
                                 </p>
-                                <div class="price d-flex justify-content-around">
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                                          </svg>
-                                    </a>
-                                    <p class="price">
+                                <div class="price d-flex justify-content-between px-3">
+                                    <p class="price ml-3">
                                         Rs.195
                                     </p>
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                        </svg>
-                                    </a>
+                                    <p class="btn carts-option mb-1"><i class="fa-solid fa-circle-plus"></i></p>
                                 </div>
                             </div>
-                            <div class="col-lg-4 menu-item">
+                            <div class="col-lg-4 menu-item box-shadow">
+                                
                                 <a href="assests/menu/menu-item-2.png" class="glightbox"><img
                                         src="assests/menu/menu-item-2.png" class="menu-img img-fluid" alt="menu-item-2"></a>
                                 <h4>Food Item</h4>
                                 <p class="ingredients">
                                     Lorem, deren, trataro, filede, nerada
                                 </p>
-                                <div class="price d-flex justify-content-around">
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                                          </svg>
-                                    </a>
-                                    <p class="price">
+                                <div class="price d-flex justify-content-between px-3">
+                                    <p class="price ml-3">
                                         Rs.195
                                     </p>
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                        </svg>
-                                    </a>
+                                    <p class="btn carts-option mb-1"><i class="fa-solid fa-circle-plus"></i></p>
                                 </div>
                             </div>
-                            <div class="col-lg-4 menu-item">
+                            <div class="col-lg-4 menu-item box-shadow">
+                                
                                 <a href="assests/menu/menu-item-3.png" class="glightbox"><img
-                                        src="assests/menu/menu-item-3.png" class="menu-img img-fluid" alt="menu-item-3"></a>
+                                        src="assests/menu/menu-item-3.png" class="menu-img img-fluid mt-2" alt="menu-item-3"></a>
                                 <h4>Food Item</h4>
                                 <p class="ingredients">
                                     Lorem, deren, trataro, filede, nerada
                                 </p>
-                                <div class="price d-flex justify-content-around">
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                                          </svg>
-                                    </a>
-                                    <p class="price">
+                                <div class="price d-flex justify-content-between px-3">
+                                    <p class="price ml-3">
                                         Rs.195
                                     </p>
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                        </svg>
-                                    </a>
+                                    <p class="btn carts-option mb-1"><i class="fa-solid fa-circle-plus"></i></p>
                                 </div>
                             </div>
-                            <div class="col-lg-4 menu-item">
+                            <div class="col-lg-4 menu-item box-shadow">
+                                
                                 <a href="assests/menu/menu-item-4.png" class="glightbox"><img
-                                        src="assests/menu/menu-item-4.png" class="menu-img img-fluid" alt="menu-item-4"></a>
+                                        src="assests/menu/menu-item-4.png" class="menu-img img-fluid mt-2" alt="menu-item-4"></a>
                                 <h4>Food Item</h4>
                                 <p class="ingredients">
                                     Lorem, deren, trataro, filede, nerada
                                 </p>
-                                <div class="price d-flex justify-content-around">
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                                          </svg>
-                                    </a>
-                                    <p class="price">
+                                <div class="price d-flex justify-content-between px-3">
+                                    <p class="price ml-3">
                                         Rs.195
                                     </p>
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                        </svg>
-                                    </a>
+                                    <p class="btn carts-option mb-1"><i class="fa-solid fa-circle-plus"></i></p>
                                 </div>
                             </div>
-                            <div class="col-lg-4 menu-item">
+                            <div class="col-lg-4 menu-item box-shadow">
+                                
                                 <a href="assests/menu/menu-item-5.png" class="glightbox"><img
-                                        src="assests/menu/menu-item-5.png" class="menu-img img-fluid" alt="menu-item-5"></a>
+                                        src="assests/menu/menu-item-5.png" class="menu-img img-fluid mt-2" alt="menu-item-5"></a>
                                 <h4>Food Item</h4>
                                 <p class="ingredients">
                                     Lorem, deren, trataro, filede, nerada
                                 </p>
-                                <div class="price d-flex justify-content-around">
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                                          </svg>
-                                    </a>
-                                    <p class="price">
+                                <div class="price d-flex justify-content-between px-3">
+                                    <p class="price ml-3">
                                         Rs.195
                                     </p>
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                        </svg>
-                                    </a>
+                                    <p class="btn carts-option mb-1"><i class="fa-solid fa-circle-plus"></i></p>
                                 </div>
                             </div>
                         </div>
@@ -1063,96 +1015,64 @@
                     <!-- End Breakfast Menu Content -->
                     <div class="tab-pane fade" id="menu-lunch">
                         <div class="row gy-5">
-                            <div class="col-lg-4 menu-item">
+                            <div class="col-lg-4 menu-item box-shadow">
+                                
                                 <a href="assests/menu/menu-item-1.png" class="glightbox"><img
-                                        src="assests/menu/menu-item-1.png" class="menu-img img-fluid" alt="menu-item-1"></a>
+                                        src="assests/menu/menu-item-1.png" class="menu-img img-fluid mt-2" alt="menu-item-1"></a>
                                 <h4>Food Item</h4>
                                 <p class="ingredients">
                                     Lorem, deren, trataro, filede, nerada
                                 </p>
-                                <div class="price d-flex justify-content-around">
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                                          </svg>
-                                    </a>
-                                    <p class="price">
+                                <div class="price d-flex justify-content-between px-3">
+                                    <p class="price ml-3">
                                         Rs.195
                                     </p>
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                        </svg>
-                                    </a>
+                                    <p class="btn carts-option mb-1"><i class="fa-solid fa-circle-plus"></i></p>
                                 </div>
                             </div>
-                            <div class="col-lg-4 menu-item">
+                            <div class="col-lg-4 menu-item box-shadow">
+                                
                                 <a href="assests/menu/menu-item-2.png" class="glightbox"><img
                                         src="assests/menu/menu-item-2.png" class="menu-img img-fluid" alt="menu-item-2"></a>
                                 <h4>Food Item</h4>
                                 <p class="ingredients">
                                     Lorem, deren, trataro, filede, nerada
                                 </p>
-                                <div class="price d-flex justify-content-around">
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                                          </svg>
-                                    </a>
-                                    <p class="price">
+                                <div class="price d-flex justify-content-between px-3">
+                                    <p class="price ml-3">
                                         Rs.195
                                     </p>
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                        </svg>
-                                    </a>
+                                    <p class="btn carts-option mb-1"><i class="fa-solid fa-circle-plus"></i></p>
                                 </div>
                             </div>
-                            <div class="col-lg-4 menu-item">
+                            <div class="col-lg-4 menu-item box-shadow">
+                                
                                 <a href="assests/menu/menu-item-3.png" class="glightbox"><img
-                                        src="assests/menu/menu-item-3.png" class="menu-img img-fluid" alt="menu-item-3"></a>
+                                        src="assests/menu/menu-item-3.png" class="menu-img img-fluid mt-2" alt="menu-item-3"></a>
                                 <h4>Food Item</h4>
                                 <p class="ingredients">
                                     Lorem, deren, trataro, filede, nerada
                                 </p>
-                                <div class="price d-flex justify-content-around">
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                                          </svg>
-                                    </a>
-                                    <p class="price">
+                                <div class="price d-flex justify-content-between px-3">
+                                    <p class="price ml-3">
                                         Rs.195
                                     </p>
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                        </svg>
-                                    </a>
+                                    <p class="btn carts-option mb-1"><i class="fa-solid fa-circle-plus"></i></p>
                                 </div>
                             </div>
-                            <div class="col-lg-4 menu-item">
+                            <div class="col-lg-4 menu-item box-shadow">
+                                
                                 <a href="assests/menu/menu-item-4.png" class="glightbox"><img
-                                        src="assests/menu/menu-item-4.png" class="menu-img img-fluid" alt="menu-item-4"></a>
+                                        src="assests/menu/menu-item-4.png" class="menu-img img-fluid mt-2" alt="menu-item-4"></a>
                                 <h4>Food Item</h4>
                                 <p class="ingredients">
                                     Lorem, deren, trataro, filede, nerada
                                 </p>
-                                <div class="price d-flex justify-content-around">
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                                          </svg>
-                                    </a>
-                                    <p class="price">
+                                <div class="price d-flex justify-content-between px-3">
+                                    <p class="price ml-3">
                                         Rs.195
                                     </p>
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                        </svg>
-                                    </a>
+                                    <p class="btn carts-option mb-1"><i class="fa-solid fa-circle-plus"></i></p>
                                 </div>
                             </div>
                         </div>
@@ -1160,96 +1080,64 @@
                     <!-- End Lunch Menu Content -->
                     <div class="tab-pane fade" id="menu-dinner">
                         <div class="row gy-5">
-                            <div class="col-lg-4 menu-item">
+                            <div class="col-lg-4 menu-item box-shadow">
+                                
                                 <a href="assests/menu/menu-item-1.png" class="glightbox"><img
-                                        src="assests/menu/menu-item-1.png" class="menu-img img-fluid" alt="menu-item-1"></a>
+                                        src="assests/menu/menu-item-1.png" class="menu-img img-fluid mt-2" alt="menu-item-1"></a>
                                 <h4>Food Item</h4>
                                 <p class="ingredients">
                                     Lorem, deren, trataro, filede, nerada
                                 </p>
-                                <div class="price d-flex justify-content-around">
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                                          </svg>
-                                    </a>
-                                    <p class="price">
+                                <div class="price d-flex justify-content-between px-3">
+                                    <p class="price ml-3">
                                         Rs.195
                                     </p>
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                        </svg>
-                                    </a>
+                                    <p class="btn carts-option mb-1"><i class="fa-solid fa-circle-plus"></i></p>
                                 </div>
                             </div>
-                            <div class="col-lg-4 menu-item">
+                            <div class="col-lg-4 menu-item box-shadow">
+                                
                                 <a href="assests/menu/menu-item-2.png" class="glightbox"><img
                                         src="assests/menu/menu-item-2.png" class="menu-img img-fluid" alt="menu-item-2"></a>
                                 <h4>Food Item</h4>
                                 <p class="ingredients">
                                     Lorem, deren, trataro, filede, nerada
                                 </p>
-                                <div class="price d-flex justify-content-around">
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                                          </svg>
-                                    </a>
-                                    <p class="price">
+                                <div class="price d-flex justify-content-between px-3">
+                                    <p class="price ml-3">
                                         Rs.195
                                     </p>
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                        </svg>
-                                    </a>
+                                    <p class="btn carts-option mb-1"><i class="fa-solid fa-circle-plus"></i></p>
                                 </div>
                             </div>
-                            <div class="col-lg-4 menu-item">
+                            <div class="col-lg-4 menu-item box-shadow">
+                                
                                 <a href="assests/menu/menu-item-3.png" class="glightbox"><img
-                                        src="assests/menu/menu-item-3.png" class="menu-img img-fluid" alt="menu-item-3"></a>
+                                        src="assests/menu/menu-item-3.png" class="menu-img img-fluid mt-2" alt="menu-item-3"></a>
                                 <h4>Food Item</h4>
                                 <p class="ingredients">
                                     Lorem, deren, trataro, filede, nerada
                                 </p>
-                                <div class="price d-flex justify-content-around">
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                                          </svg>
-                                    </a>
-                                    <p class="price">
+                                <div class="price d-flex justify-content-between px-3">
+                                    <p class="price ml-3">
                                         Rs.195
                                     </p>
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                        </svg>
-                                    </a>
+                                    <p class="btn carts-option mb-1"><i class="fa-solid fa-circle-plus"></i></p>
                                 </div>
                             </div>
-                            <div class="col-lg-4 menu-item">
-                                <a href="assests/menu/menu-item-3.png" class="glightbox"><img
-                                        src="assests/menu/menu-item-3.png" class="menu-img img-fluid" alt="menu-item-3"></a>
+                            <div class="col-lg-4 menu-item box-shadow">
+                                
+                                <a href="assests/menu/menu-item-4.png" class="glightbox"><img
+                                        src="assests/menu/menu-item-4.png" class="menu-img img-fluid mt-2" alt="menu-item-4"></a>
                                 <h4>Food Item</h4>
                                 <p class="ingredients">
                                     Lorem, deren, trataro, filede, nerada
                                 </p>
-                                <div class="price d-flex justify-content-around">
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                                          </svg>
-                                    </a>
-                                    <p class="price">
+                                <div class="price d-flex justify-content-between px-3">
+                                    <p class="price ml-3">
                                         Rs.195
                                     </p>
-                                    <a href="#" class="btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                        </svg>
-                                    </a>
+                                    <p class="btn carts-option mb-1"><i class="fa-solid fa-circle-plus"></i></p>
                                 </div>
                             </div>
                         </div>
@@ -1260,61 +1148,95 @@
         </div>
     </section>
     <!-- section menu -->
-    <!-- Testimonial Slider Section -->
-    <section id="testimonial" class="bg-light text-dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="description-content text-center">
-                        <h3>What Our Client Says</h3>
-                        <h1 class="font-weight-bold">About Us</h1>
+    <!-- section delivery information -->
+    <section id="delivery-info">
+        <div class="delivery-info position-relative">
+            <span class="menu-shapes-left">
+                <img src="assests/images/scatter-5.png" alt="scatter">
+            </span>
+            <span class="menu-shapes-right">
+                <img src="assests/images/scatter-7.png" alt="scatter">
+            </span>
+            <div class="container">
+                <div class="row my-5">
+                    <div class="col-12 col-md-6 left-content">
+                        <h1><span class="start-text d-block">Delivery</span> A Moments Of Delivered On Right Time & Place</h1>
+                        <h5 class="text-justify text-muted mt-4">Food Pokhara is a restaurant, bar and coffee roastery located on a busy corner site at the end of Talchowk's Super Market. With glazed frontage on two sides of the building, overlooking the market and a bustling Lekhnath.</h5>
+                        <div class="bottom-content mt-4 d-flex align-items-center">
+                            <div class="bottom-left">
+                                <h6 class="text-muted">Delivery Order Num</h6>
+                                <h5>+977 9891223819</h5>
+                            </div>
+                            <div class="icon-image ml-3 mb-3">
+                                <img src="assests/images/del-icon.png" alt="delivery-icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <img src="assests/images/del-man.png" alt="delivery-man">
                     </div>
                 </div>
-                <div class="col-12">
-                    <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
-                        <!-- Slide Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#testimonialCarousel" data-slide-to="1"></li>
-                            <li data-target="#testimonialCarousel" data-slide-to="2"></li>
-                            <li data-target="#testimonialCarousel" data-slide-to="3"></li>
-                        </ol>
-                        <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item active">
-                                <div class="carousel-content">
-                                    <div class="client-img"><img src="assests/images/testimonials-1.jpg" alt="Testimonial Slider"></div>
-                                    <h3>XYZ<br></h3>
-                                    <p class="col-md-8 offset-md-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis veritatis dolor totam inventore cumque necessitatibus ipsam unde assumenda accusamus eligendi architecto fugiat nulla, repudiandae quia!</p>
+            </div>
+        </div>
+    </section>
+    <!-- section delivery information -->
+    <!-- Testimonial Slider Section -->
+    <section id="testimonial" class=" text-dark">
+        <div class="testimonials position-relative">
+            <span class="menu-shapes-left">
+                <img src="assests/images/scatter-5.png" alt="scatter">
+            </span>
+            <span class="menu-shapes-right">
+                <img src="assests/images/scatter-9.png" alt="scatter">
+            </span>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="description-content text-center">
+                            <h3>What Our Client Says</h3>
+                            <h1 class="font-weight-bold">About Us</h1>
+                        </div>
+                    </div>
+                    <div class="col-12 ">
+                        <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Slide Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#testimonialCarousel" data-slide-to="1"></li>
+                                <li data-target="#testimonialCarousel" data-slide-to="2"></li>
+                                <li data-target="#testimonialCarousel" data-slide-to="3"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <div class="carousel-content">
+                                        <div class="client-img"><img src="assests/images/testimonials-1.jpg" alt="Testimonial Slider"></div>
+                                        <h3>XYZ<br></h3>
+                                        <p class="col-md-8 offset-md-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis veritatis dolor totam inventore cumque necessitatibus ipsam unde assumenda accusamus eligendi architecto fugiat nulla, repudiandae quia!</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="carousel-content">
-                                    <div class="client-img"><img src="assests/images/testimonials-2.jpg" alt="Testimonial Slider"></div>
-                                    <h3>XYZ <br></h3>
-                                    <p class="col-md-8 offset-md-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis veritatis dolor totam inventore cumque necessitatibus ipsam unde assumenda accusamus eligendi architecto fugiat nulla, repudiandae quia!</p>
+                                <div class="carousel-item">
+                                    <div class="carousel-content">
+                                        <div class="client-img"><img src="assests/images/testimonials-2.jpg" alt="Testimonial Slider"></div>
+                                        <h3>XYZ <br></h3>
+                                        <p class="col-md-8 offset-md-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis veritatis dolor totam inventore cumque necessitatibus ipsam unde assumenda accusamus eligendi architecto fugiat nulla, repudiandae quia!</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="carousel-content">
-                                    <div class="client-img"><img src="assests/images/testimonials-3.jpg" alt="Testimonial Slider"></div>
-                                    <h3>XYZ <br></h3>
-                                    <p class="col-md-8 offset-md-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis veritatis dolor totam inventore cumque necessitatibus ipsam unde assumenda accusamus eligendi architecto fugiat nulla, repudiandae quia!</p>
+                                <div class="carousel-item">
+                                    <div class="carousel-content">
+                                        <div class="client-img"><img src="assests/images/testimonials-3.jpg" alt="Testimonial Slider"></div>
+                                        <h3>XYZ <br></h3>
+                                        <p class="col-md-8 offset-md-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis veritatis dolor totam inventore cumque necessitatibus ipsam unde assumenda accusamus eligendi architecto fugiat nulla, repudiandae quia!</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="carousel-content">
-                                    <div class="client-img"><img src="assests/images/testimonials-4.jpg" alt="Testimonial Slider"></div>
-                                    <h3>XYZ <br></h3>
-                                    <p class="col-md-8 offset-md-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis veritatis dolor totam inventore cumque necessitatibus ipsam unde assumenda accusamus eligendi architecto fugiat nulla, repudiandae quia!</p>
+                                <div class="carousel-item">
+                                    <div class="carousel-content">
+                                        <div class="client-img"><img src="assests/images/testimonials-4.jpg" alt="Testimonial Slider"></div>
+                                        <h3>XYZ <br></h3>
+                                        <p class="col-md-8 offset-md-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis veritatis dolor totam inventore cumque necessitatibus ipsam unde assumenda accusamus eligendi architecto fugiat nulla, repudiandae quia!</p>
+                                    </div>
                                 </div>
+                                </a>
                             </div>
-                            <!-- Slider pre and next arrow -->
-                            <a class="carousel-control-prev text-dark" href="#testimonialCarousel" role="button" data-slide="prev">
-                            <i class="fas fa-chevron-left"></i>
-                            </a>
-                            <a class="carousel-control-next text-dark" href="#testimonialCarousel" role="button" data-slide="next">
-                            <i class="fas fa-chevron-right"></i>
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -1323,65 +1245,83 @@
     </section>
     <!-- End Testimonial Slider Section -->
     <!-- section footer -->
-    <footer id="footer" class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 d-flex">
-                    <i class="bi bi-geo-alt icon"></i>
-                    <div>
-                        <h4>Address</h4>
-                        <p>
-                        Pokhara-27, Gandaki<br>
-                        Pradesh-4, Nepal<br>
-                        </p>
+    <div class="footer-section">
+        <footer id="footer" class="footer position-relative">
+            <span class="menu-shapes-left">
+                <img src="assests/images/footer-left.png" alt="scatter">
+            </span>
+            <span class="menu-shapes-right animate">
+                <img src="assests/images/footer-right.png" alt="scatter">
+            </span>
+            <span class="menu-shapes-bottom">
+                <img src="assests/images/footer-bottom.png" alt="scatter">
+            </span>
+            <span class="menu-shapes-left-bottom animate">
+                <img src="assests/images/footer-left-bottom.png" alt="scatter">
+            </span>
+            <span class="menu-shapes-right-bottom animate">
+                <img src="assests/images/footer-right-bottom.png" alt="scatter">
+            </span>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 d-flex">
+                        <i class="bi bi-geo-alt icon"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>
+                            Pokhara-27, Gandaki<br>
+                            Pradesh-4, Nepal<br>
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 footer-links d-flex">
-                    <i class="bi bi-telephone icon"></i>
-                    <div>
-                        <h4>Reservations</h4>
-                        <p>
-                        <strong>Phone:</strong> +977 98058 67639<br>
-                        <strong>Email:</strong> info@example.com<br>
-                        </p>
+                    <div class="col-lg-3 col-md-6 footer-links d-flex">
+                        <i class="bi bi-telephone icon"></i>
+                        <div>
+                            <h4>Reservations</h4>
+                            <p>
+                            <strong>Phone:</strong> +977 98058 67639<br>
+                            <strong>Email:</strong> info@example.com<br>
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 footer-links d-flex">
-                    <i class="bi bi-clock icon"></i>
-                    <div>
-                        <h4>Opening Hours</h4>
-                        <p>
-                        <strong>Mon-Sat: 11AM</strong> - 10PM<br>
-                        Sunday: Closed
-                        </p>
+                    <div class="col-lg-3 col-md-6 footer-links d-flex">
+                        <i class="bi bi-clock icon"></i>
+                        <div>
+                            <h4>Opening Hours</h4>
+                            <p>
+                            <strong>Mon-Sat: 11AM</strong> - 10PM<br>
+                            Sunday: Closed
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 footer-links">
-                    <h4>Follow Us</h4>
-                    <div class="footer-social-links d-flex">
-                        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Follow Us</h4>
+                        <div class="footer-social-links d-flex">
+                            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="copyright">
-                &copy; Copyright <strong><span>Food Chow</span></strong>. All Rights Reserved
+            <div class="container">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>Food Pokhara</span></strong>. All Rights Reserved
+                </div>
+                <div class="greeting">
+                    <h6>Thanks for visiting</h6>
+                </div>
             </div>
-            <div class="greeting">
-                <h6>Thanks for visiting</h6>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
     <!-- section footer -->
     <!-- Optional JavaScript -->
     <script src="./assests/jquery/jquery3.6.js"></script>
     <script src="./assests/js/preloader.js"></script>
     <script src="./assests/js/hammenu.js"></script>
     <script src="./assests/js/formdisplay.js"></script>
+    <script src="./assests/js/cartoption.js"></script>
     <script src="./assests/js/redirect.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
