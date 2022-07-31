@@ -833,6 +833,7 @@ a {
 }
 .footer .menu-shapes-left{
   top:0;
+  opacity: 0.3;
 }
 .footer .menu-shapes-right{
   position: absolute;
@@ -850,7 +851,8 @@ a {
 .footer .menu-shapes-left-bottom{
   position: absolute;
   bottom:20%;
-  left:5%;
+  left:3%;
+  opacity: .5;
 }
 .footer .menu-shapes-right-bottom{
   position: absolute;
