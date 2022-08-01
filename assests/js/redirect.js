@@ -23,4 +23,8 @@ $(document).ready(function (){
         // $(".preloader").show();
         window.location.href = "userdashboard.html";
       });
+      $(".log-out").click(function (){
+        // $(".preloader").show();
+        window.location.href = "index.html";
+      });
 });

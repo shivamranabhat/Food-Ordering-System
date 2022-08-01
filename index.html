@@ -202,7 +202,7 @@
     <!-- section login and signup -->
     <!-- section header-->
     <section id="header">
-        <div class="header d-flex justify-content-around text-white w-100 position-relative">
+        <div class="header d-flex justify-content-around  text-white w-100 position-relative">
             <div class="left-header d-flex">
                 <div class="review mr-5 px-5">Review</div>
                 <div class="help px-5">Help?</div>
@@ -217,8 +217,8 @@
                     <a href="#" class="text-uppercase text-white signin">Login</a>
                 </div>
             </div>
-            <div class="cart position-absolute">
-                <a href="#">  <i class="fa-solid fa-cart-shopping" style="font-size: 20px;"></i></a>
+            <div class="cart-icon position-absolute">
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
         </div>
     </section>
@@ -272,7 +272,7 @@
                 </svg>
             </div>
             <div class="menu-list">
-                <div class="user-profile mt-3">
+                <!-- <div class="user-profile mt-3">
                     <div class="user-image d-flex justify-content-center">
                         <img src="assests/images/user-avatar.jpg" alt="user-avatar" class="rounded-circle">
                     </div>
@@ -288,7 +288,7 @@
                         </button>
 
                     </div>
-                </div>
+                </div> -->
                 <ul class="navbar-nav ml-4 mt-5">
                     <li class="nav-item text-uppercase active">
                         <span class="d-block text-uppercase">Food Ordering</span>
@@ -309,12 +309,16 @@
                 </ul>
             </div>
             <div class="right-header ml-3">
-                <div class="icons d-flex mr-4">
+                <div class="icons d-flex mr-4 mb-4">
                     <i class="fa-brands fa-facebook-square mr-4"></i>
                     <i class="fa-brands fa-twitter mr-4"></i>
                     <i class="fa-brands fa-google-plus-g mr-5"></i>
                 </div>
-               
+                <div class="log-button">
+                    <a href="#">
+                        <button class="btn text-white px-3 py-1">Login</button>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -826,19 +830,19 @@
             </div>
             <div class="container menu-content mt-5">
                 <ul class="nav nav-tabs d-flex justify-content-center mb-5">
-                    <li class="nav-item">
+                    <li class="nav-item mb-3">
                         <a class="nav-link rounded active show" data-toggle="tab" data-target="#menu-starters">
                             <h4>Starters</h4>
                         </a>
                     </li>
                     <!-- End tab nav item -->
-                    <li class="nav-item">
+                    <li class="nav-item mb-3">
                         <a class="nav-link rounded" data-toggle="tab" data-target="#menu-breakfast">
                             <h4>Breakfast</h4>
                         </a>
                     </li>
                     <!-- End tab nav item -->
-                    <li class="nav-item">
+                    <li class="nav-item mb-3">
                         <a class="nav-link rounded" data-toggle="tab" data-target="#menu-lunch">
                             <h4>Lunch</h4>
                         </a>

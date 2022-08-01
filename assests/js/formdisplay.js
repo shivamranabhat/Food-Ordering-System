@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".signin,.sign-buttons").on("click",function () {
+    $(".signin,.sign-buttons,.log-button").on("click",function () {
         $("#log-form").show(400);
     });
     $(".signup-link").on("click",function () {
@@ -19,12 +19,8 @@ $(document).ready(function(){
         // console.log("this is clicked");
         $("#log-form").hide();
     });
-});
-
-//for viewing profile
-$(document).ready(function(){
+    //for viewing profile
     $(".view-profile").on("click",function () {
         $(".profile").toggle(400);
     });
-   
 });
