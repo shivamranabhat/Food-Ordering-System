@@ -627,7 +627,7 @@ a {
   transition: 0.3s;
   color: #37373f;
   cursor: pointer;
-  height: 100%;
+ 
   border: 2px solid rgb(255, 189, 53) !important;
 }
 
